@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheMathMania</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="game_page.css">
+    <link rel = "icon" href="MathMania.png" type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <script src="main_page.js"></script>
+</head>
+<body>
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
+    <br>
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
+    <div class="container">
+        <center>
+            <h2 style="color:white;   
+            font-family: 'Mate SC';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;">TheMathMania</h2>
+            <h3 id="player_question">Question Turn - </h3>
+            <h3 id="player_answer">Answer Turn - </h3>
+            <div id="output" class="container" style="
+            background:white; border-radius: 10px; border-top: 10px solid #aa4465; padding: 10px; float: none; text-align:left;">
+          <h4 id="question_for_the_game_for_the_players"></h4>
+        </div>
+            <br><br><br><br><br>
+            <strong><label style="color:white;">Number 1</label></strong>
+            <br>
+            <input type="text" id="1_input" placeholder="Type here..." style="width: 100%;">
+            <br><br><br>
+            <strong><label style="color: white;">Number 2</label></strong>
+            <br>
+            <input type="text" id="2_input" placeholder="Type here..." style="width: 100%;">
+        <br><br><br>
+        <button id="send_button" class="btn btn-success" style="width: 50%;" onclick="send();">Send Question</button>
+        </center>
+    </div>
+</body>
+</html>
